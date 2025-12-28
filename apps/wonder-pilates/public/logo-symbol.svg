@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 70" fill="#2C5530">
+  <!-- Head (circle) -->
+  <circle cx="50" cy="12" r="8"/>
+  <!-- Arms/Body (curved crescent shape) -->
+  <path d="M8 38 Q50 65 92 38 L85 42 Q50 58 15 42 Z"/>
+  <!-- Ground/Shadow (thin ellipse) -->
+  <ellipse cx="50" cy="58" rx="42" ry="3"/>
+</svg>
