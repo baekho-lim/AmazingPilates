@@ -4,8 +4,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://wonderpilates.kr"),
   title: {
-    default: "Wonder Pilates | 경이로운 필라테스",
-    template: "%s | Wonder Pilates",
+    default: "경이로운 필라테스 | Wonder Pilates",
+    template: "%s | 경이로운 필라테스",
   },
   description:
     "김포 마산동 프리미엄 필라테스 스튜디오. 개인 레슨, 체형교정, 재활 필라테스 전문. 경이로운 필라테스에서 건강한 변화를 시작하세요.",
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ko_KR",
     url: "https://wonderpilates.kr",
-    siteName: "Wonder Pilates",
-    title: "Wonder Pilates | 경이로운 필라테스",
+    siteName: "경이로운 필라테스",
+    title: "경이로운 필라테스 | Wonder Pilates",
     description:
       "김포 마산동 프리미엄 필라테스 스튜디오. 개인 레슨, 체형교정, 재활 필라테스 전문.",
     images: [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wonder Pilates | 경이로운 필라테스",
+    title: "경이로운 필라테스 | Wonder Pilates",
     description:
       "김포 마산동 프리미엄 필라테스 스튜디오. 개인 레슨, 체형교정, 재활 필라테스 전문.",
     images: ["/og-image.jpg"],

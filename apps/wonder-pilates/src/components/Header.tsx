@@ -10,13 +10,13 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[var(--color-wp-gray-100)]">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
+          {/* Logo - 한글이 메인, 영문이 서브 */}
           <a href="/" className="flex flex-col">
             <span className="text-lg md:text-xl font-bold text-[var(--color-wp-primary)]">
-              {siteConfig.brand.en}
+              {siteConfig.brand.kr}
             </span>
             <span className="text-xs text-[var(--color-wp-gray-500)]">
-              {siteConfig.brand.kr}
+              {siteConfig.brand.en}
             </span>
           </a>
 

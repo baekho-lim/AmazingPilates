@@ -8,7 +8,7 @@ export const siteConfig = {
   },
   tagline: {
     kr: "경이로운 필라테스 | Wonder Pilates",
-    en: "Wonder Pilates | 경이로운 필라테스",
+    en: "경이로운 필라테스 | Wonder Pilates",
   },
   domain: "https://wonderpilates.kr",
   copyright: "Wonder Pilates",
@@ -264,7 +264,7 @@ export const contactSectionContent = {
 };
 
 export const footerContent = {
-  brand: "Wonder Pilates | 경이로운 필라테스",
+  brand: "경이로운 필라테스 | Wonder Pilates",
   tagline: {
     kr: "당신의 몸과 마음에 경이로운 변화를",
     en: "Bring wonder to your body and mind",
