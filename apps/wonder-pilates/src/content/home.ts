@@ -203,11 +203,11 @@ export const founderContent = {
   },
   currentPositions: [
     {
-      kr: "現 경이로운필라테스 대표",
+      kr: "現 경이로운 필라테스 대표",
       en: "Current CEO of Wonder Pilates",
     },
     {
-      kr: "現 K클래식필라테스 협회 대표이사",
+      kr: "現 K클래식 필라테스 협회 대표이사",
       en: "Current CEO of K Classic Pilates Association",
     },
   ],
