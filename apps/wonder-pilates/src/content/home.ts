@@ -45,8 +45,8 @@ export const heroContent = {
   },
   cta: {
     primary: {
-      kr: "상담 문의",
-      en: "Contact Us",
+      kr: "지금 상담하기",
+      en: "Consult Now",
     },
     secondary: {
       kr: "프로그램 보기",
@@ -63,6 +63,16 @@ export const whyWonderContent = {
   subtitle: {
     kr: "경이로운 필라테스가 특별한 이유",
     en: "What makes Wonder Pilates special",
+  },
+  cta: {
+    text: {
+      kr: "나에게 맞는 프로그램 상담받기",
+      en: "Get personalized program consultation",
+    },
+    subtext: {
+      kr: "지금 바로 상담받고 나에게 맞는 프로그램을 찾아보세요",
+      en: "Get a consultation now and find the right program for you",
+    },
   },
   items: [
     {
@@ -232,6 +242,16 @@ export const founderContent = {
     { year: "2022", kr: "BPIA 설립", en: "Established BPIA" },
     { year: "2024", kr: "KCPA 설립 및 교재 출간", en: "Established KCPA and published textbooks" },
   ],
+  cta: {
+    text: {
+      kr: "대표에게 직접 상담받기",
+      en: "Consult directly with the founder",
+    },
+    subtext: {
+      kr: "10년 경험의 전문가에게 직접 상담받으세요",
+      en: "Get direct consultation from an expert with 10 years of experience",
+    },
+  },
 };
 
 export const contactSectionContent = {
@@ -271,7 +291,7 @@ export const footerContent = {
   },
   links: [
     { label: { kr: "프로그램", en: "Programs" }, href: "#programs" },
-    { label: { kr: "대표 소개", en: "About" }, href: "/about" },
+    { label: { kr: "대표 소개", en: "About" }, href: "#founder" },
     { label: { kr: "오시는 길", en: "Contact" }, href: "#contact" },
   ],
   relatedSite: {
@@ -282,7 +302,7 @@ export const footerContent = {
 
 export const navItems = [
   { label: { kr: "프로그램", en: "Programs" }, href: "#programs" },
-  { label: { kr: "대표 소개", en: "About" }, href: "/about" },
+  { label: { kr: "대표 소개", en: "About" }, href: "#founder" },
   { label: { kr: "오시는 길", en: "Contact" }, href: "#contact" },
   { label: { kr: "자격증 과정", en: "Certification" }, href: "https://kclassicpilates.kr", external: true },
 ];

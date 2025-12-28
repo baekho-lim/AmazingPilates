@@ -2,8 +2,10 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/sections/Hero";
 import { WhyWonder } from "@/components/sections/WhyWonder";
 import { Programs } from "@/components/sections/Programs";
+import { Founder } from "@/components/sections/Founder";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/Footer";
+import { FloatingCTA } from "@/components/FloatingCTA";
 
 export default function HomePage() {
   return (
@@ -13,9 +15,11 @@ export default function HomePage() {
         <Hero />
         <WhyWonder />
         <Programs />
+        <Founder />
         <Contact />
       </main>
       <Footer />
+      <FloatingCTA />
     </>
   );
 }
