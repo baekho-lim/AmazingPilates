@@ -26,9 +26,19 @@ export function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-[var(--color-wp-gray-600)] hover:text-[var(--color-wp-primary)] transition-colors"
+                {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                className={`text-sm font-medium transition-colors ${
+                  item.external
+                    ? "text-[var(--color-wp-secondary-dark)] hover:text-[var(--color-wp-primary)] flex items-center gap-1"
+                    : "text-[var(--color-wp-gray-600)] hover:text-[var(--color-wp-primary)]"
+                }`}
               >
                 {item.label.kr}
+                {item.external && (
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                )}
               </a>
             ))}
           </nav>
@@ -86,10 +96,20 @@ export function Header() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="py-2 text-[var(--color-wp-gray-700)] hover:text-[var(--color-wp-primary)]"
+                  {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  className={`py-2 flex items-center gap-2 ${
+                    item.external
+                      ? "text-[var(--color-wp-secondary-dark)]"
+                      : "text-[var(--color-wp-gray-700)] hover:text-[var(--color-wp-primary)]"
+                  }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label.kr}
+                  {item.external && (
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  )}
                 </a>
               ))}
             </nav>

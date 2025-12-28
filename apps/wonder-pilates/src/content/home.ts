@@ -271,7 +271,7 @@ export const footerContent = {
   },
   links: [
     { label: { kr: "프로그램", en: "Programs" }, href: "#programs" },
-    { label: { kr: "대표 소개", en: "Founder" }, href: "#founder" },
+    { label: { kr: "대표 소개", en: "About" }, href: "/about" },
     { label: { kr: "오시는 길", en: "Contact" }, href: "#contact" },
   ],
   relatedSite: {
@@ -282,6 +282,7 @@ export const footerContent = {
 
 export const navItems = [
   { label: { kr: "프로그램", en: "Programs" }, href: "#programs" },
-  { label: { kr: "대표 소개", en: "Founder" }, href: "#founder" },
+  { label: { kr: "대표 소개", en: "About" }, href: "/about" },
   { label: { kr: "오시는 길", en: "Contact" }, href: "#contact" },
+  { label: { kr: "자격증 과정", en: "Certification" }, href: "https://kclassicpilates.kr", external: true },
 ];
