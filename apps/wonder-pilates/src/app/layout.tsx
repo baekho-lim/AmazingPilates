@@ -84,6 +84,8 @@ export default function RootLayout({
           crossOrigin="anonymous"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
         />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#2C5530" />
       </head>
       <body className="antialiased">{children}</body>
     </html>
