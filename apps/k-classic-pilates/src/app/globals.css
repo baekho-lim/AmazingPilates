@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+/* K Classic Pilates 브랜드 디자인 토큰 */
+@theme {
+  /* Primary Colors - 전문적이고 권위있는 느낌 */
+  --color-kc-primary: #1E3A5F;
+  --color-kc-primary-light: #2E5A8F;
+  --color-kc-primary-dark: #0F1D30;
+
+  /* Secondary Colors - 골드 계열로 프리미엄 느낌 */
+  --color-kc-secondary: #C5A572;
+  --color-kc-secondary-light: #D9C4A0;
+  --color-kc-secondary-dark: #A68A4E;
+
+  /* Neutral Colors */
+  --color-kc-cream: #FAF8F5;
+  --color-kc-beige: #F5F0E8;
+  --color-kc-gray-50: #F9FAFB;
+  --color-kc-gray-100: #F3F4F6;
+  --color-kc-gray-200: #E5E7EB;
+  --color-kc-gray-300: #D1D5DB;
+  --color-kc-gray-400: #9CA3AF;
+  --color-kc-gray-500: #6B7280;
+  --color-kc-gray-600: #4B5563;
+  --color-kc-gray-700: #374151;
+  --color-kc-gray-800: #1F2937;
+  --color-kc-gray-900: #111827;
+
+  /* Accent Colors */
+  --color-kc-accent: #4A6FA5;
+  --color-kc-accent-light: #6B8FC0;
+
+  /* Semantic Colors */
+  --color-kc-success: #10B981;
+  --color-kc-warning: #F59E0B;
+  --color-kc-error: #EF4444;
+  --color-kc-info: #3B82F6;
+
+  /* Typography */
+  --font-sans: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-heading: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+  /* Spacing */
+  --spacing-section: 5rem;
+  --spacing-section-mobile: 3rem;
+
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* 기본 스타일 */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-kc-gray-900);
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus 스타일 */
+:focus-visible {
+  outline: 2px solid var(--color-kc-primary);
+  outline-offset: 2px;
+}
+
+/* 선택 스타일 */
+::selection {
+  background-color: var(--color-kc-primary);
+  color: white;
+}
+
+/* 스크롤바 스타일 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-kc-gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-kc-gray-300);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-kc-gray-400);
+}

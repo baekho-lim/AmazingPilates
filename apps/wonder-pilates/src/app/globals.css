@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+/* Wonder Pilates 브랜드 디자인 토큰 */
+@theme {
+  /* Primary Colors */
+  --color-wp-primary: #2C5530;
+  --color-wp-primary-light: #3D7A42;
+  --color-wp-primary-dark: #1E3B22;
+
+  /* Secondary Colors */
+  --color-wp-secondary: #D4A373;
+  --color-wp-secondary-light: #E5C4A1;
+  --color-wp-secondary-dark: #B8885A;
+
+  /* Neutral Colors */
+  --color-wp-cream: #FEFAE0;
+  --color-wp-beige: #FAEDCD;
+  --color-wp-gray-50: #F9FAFB;
+  --color-wp-gray-100: #F3F4F6;
+  --color-wp-gray-200: #E5E7EB;
+  --color-wp-gray-300: #D1D5DB;
+  --color-wp-gray-400: #9CA3AF;
+  --color-wp-gray-500: #6B7280;
+  --color-wp-gray-600: #4B5563;
+  --color-wp-gray-700: #374151;
+  --color-wp-gray-800: #1F2937;
+  --color-wp-gray-900: #111827;
+
+  /* Accent Colors */
+  --color-wp-accent: #606C38;
+  --color-wp-accent-light: #7A8A4A;
+
+  /* Semantic Colors */
+  --color-wp-success: #10B981;
+  --color-wp-warning: #F59E0B;
+  --color-wp-error: #EF4444;
+  --color-wp-info: #3B82F6;
+
+  /* Typography */
+  --font-sans: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-heading: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+  /* Spacing */
+  --spacing-section: 5rem;
+  --spacing-section-mobile: 3rem;
+
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* 기본 스타일 */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-wp-gray-900);
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus 스타일 */
+:focus-visible {
+  outline: 2px solid var(--color-wp-primary);
+  outline-offset: 2px;
+}
+
+/* 선택 스타일 */
+::selection {
+  background-color: var(--color-wp-primary);
+  color: white;
+}
+
+/* 스크롤바 스타일 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-wp-gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-wp-gray-300);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-wp-gray-400);
+}

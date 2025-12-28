@@ -5,7 +5,14 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**"],
+      "env": [
+        "NEXT_PUBLIC_DIRECTUS_URL",
+        "NEXT_PUBLIC_SITE_ID",
+        "NEXT_PUBLIC_GTM_ID",
+        "NEXT_PUBLIC_GA4_ID",
+        "NEXT_PUBLIC_NAVER_ANALYTICS_ID"
+      ]
     },
     "lint": {
       "dependsOn": ["^lint"]
