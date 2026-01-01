@@ -32,6 +32,11 @@ jobs:
           rm -rf .vercel
           vercel link --yes --project=wonder-pilates --token=${{ secrets.VERCEL_TOKEN }}
 
+      - name: Pull Vercel Settings
+        run: |
+          cd apps/wonder-pilates
+          vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+
       - name: Build with Vercel
         run: |
           cd apps/wonder-pilates
