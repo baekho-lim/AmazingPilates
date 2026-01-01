@@ -1,0 +1,16 @@
+{
+  "projectId": "prj_okjsvgEgfBOtiZNqHliHojQZt2UD",
+  "orgId": "team_CmDmRq24bNxiaC5PDzfSJKim",
+  "projectName": "wonder-pilates",
+  "settings": {
+    "createdAt": 1767235185117,
+    "framework": "nextjs",
+    "devCommand": null,
+    "installCommand": "pnpm install",
+    "buildCommand": "cd apps/wonder-pilates && pnpm build",
+    "outputDirectory": "apps/wonder-pilates/.next",
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "24.x"
+  }
+}
