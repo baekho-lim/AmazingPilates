@@ -32,10 +32,8 @@ jobs:
       - name: Link Vercel Project
         run: |
           cd apps/wonder-pilates
-          vercel link --yes --project=wonder-pilates --token=${{ secrets.VERCEL_TOKEN }}
-        env:
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          rm -rf .vercel
+          vercel link --yes --project=wonder-pilates --scope=bh-lims-projects --token=${{ secrets.VERCEL_TOKEN }}
 
       - name: Deploy to Vercel
         run: |
