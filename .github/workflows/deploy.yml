@@ -33,7 +33,7 @@ jobs:
         run: |
           cd apps/wonder-pilates
           rm -rf .vercel
-          vercel link --yes --project=wonder-pilates --scope=bh-lims-projects --token=${{ secrets.VERCEL_TOKEN }}
+          vercel link --yes --project=wonder-pilates --token=${{ secrets.VERCEL_TOKEN }}
 
       - name: Deploy to Vercel
         run: |
